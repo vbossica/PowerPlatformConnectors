@@ -1,7 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "Enable integrations with your ActiveCampaign account using Rest APIs. [needs a general review]",
+        "description": "Enable integrations with your ActiveCampaign account using Rest APIs.",
         "version": "1.0.0",
         "title": "ActiveCampaign",
         "x-ms-api-annotation": {
@@ -14,7 +14,7 @@
     "x-ms-docs": [
         {
           "url": "https://go.microsoft.com/fwlink/?linkid=XXXX",
-          "description": "Using the ActiveCampaign Connector. [needs a general review]"
+          "description": "Using the ActiveCampaign Connector."
         }
     ],
     "host": "[parameters('hostName')]",
@@ -25,7 +25,7 @@
     "consumes": [],
     "produces": [],
     "paths": {
-        "/api/{apiVersion}/import/bulk_import": {
+        "/api/3/import/bulk_import": {
             "post": {
                 "summary": "Bulk import contacts",
                 "description": "Bulk uploads contacts into your account.",
@@ -37,14 +37,6 @@
                     "text/html"
                 ],
                 "parameters": [
-                    {
-                        "name": "apiVersion",
-                        "in": "path",
-                        "type": "string",
-                        "required": true,
-                        "default": 3,
-                        "x-ms-visibility": "internal"
-                    },
                     {
                         "name": "body",
                         "in": "body",
