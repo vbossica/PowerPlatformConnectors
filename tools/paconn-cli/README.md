@@ -8,7 +8,7 @@ The `paconn` command-line tool is designed to aid Microsoft Power Platform custo
 
 ## Installing
 
-1. Install Python 3.5+ from [https://www.python.org/downloads](Python downloads). Select the 'Download' link on any version of Python greater than Python 3.5. For Linux and macOS X, follow the appropriate link on the page. You can also install using an OS-specific package manager of your choice.
+1. Install Python 3.5+ from [Python downloads](https://www.python.org/downloads). Select the 'Download' link on any version of Python greater than Python 3.5. For Linux and macOS X, follow the appropriate link on the page. You can also install using an OS-specific package manager of your choice.
 
 2. Run the installer to begin installation and be sure to check the box 'Add Python X.X to PATH'.
 
@@ -141,7 +141,7 @@ Log in to Power Platform by running:
    
 `paconn login`
 
-This command will ask you to log in using the device code login process. Follow the prompt for the log in. Service Principle authentication is not supported at this point. Please review [a customer workaround posted in the issues page](https://github.com/microsoft/PowerPlatformConnectors/issues/287).
+This command will ask you to log in using the device code login process. Follow the prompt for the log in. Service Principal authentication is not supported at this point. Please review [a customer workaround posted in the issues page](https://github.com/microsoft/PowerPlatformConnectors/issues/287).
 
 ### Logout
 
