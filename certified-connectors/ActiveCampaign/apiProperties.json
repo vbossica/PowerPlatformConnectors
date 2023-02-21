@@ -2,7 +2,7 @@
   "properties": {
     "capabilities": [],
     "connectionParameters": {
-      "api_key": {
+      "apiKey": {
         "type": "securestring",
         "uiDefinition": {
           "constraints": {
@@ -14,21 +14,28 @@
           "displayName": "KEY",
           "tooltip": "Provide your KEY"
         }
+      },
+      "hostName": {
+        "type": "string",
+        "uiDefinition": {
+          "constraints": {
+            "required": "true"
+          },
+          "description": "ActiveCampaign Hostname (Example: yourAccountName.api-us1.com).",
+          "displayName": "ActiveCampaign REST Endpoint Hostname",
+          "tooltip": "Provide the Hostname"
+        }
       }
     },
     "iconBrandColor": "#356AE6",
     "policyTemplateInstances": [
       {
-        "title": "MyPolicy",
-        "templateId": "setqueryparameter",
         "parameters": {
-          "x-ms-apimTemplateParameter.name": "queryParameterName",
-          "x-ms-apimTemplateParameter.value": "queryParameterValue",
-          "x-ms-apimTemplateParameter.existsAction": "override"
-        }
+          "x-ms-apimTemplateParameter.urlTemplate": "https://@connectionParameters('hostName')"
+        },
+        "templateId": "dynamichosturl",
+        "title": "ActiveCampaign Hostname"
       }
-    ],
-    "publisher": "Microsoft",
-    "stackOwner": "ActiveCampaign"
+    ]
   }
 }

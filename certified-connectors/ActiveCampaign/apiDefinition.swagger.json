@@ -11,21 +11,15 @@
       "name": "Microsoft"
     }
   },
-  "x-ms-docs": [
-    {
-      "url": "https://go.microsoft.com/fwlink/?linkid=XXXX",
-      "description": "Using the ActiveCampaign Connector."
-    }
-  ],
-  "host": "[parameters('hostName')]",
-  "basePath": "/",
+  "host": "yourAccountName.api-us1.com",
+  "basePath": "/api/3",
   "schemes": [
     "https"
   ],
   "consumes": [],
   "produces": [],
   "paths": {
-    "/api/3/import/bulk_import": {
+    "/import/bulk_import": {
       "post": {
         "summary": "Bulk import contacts",
         "description": "Bulk uploads contacts into your account.",
